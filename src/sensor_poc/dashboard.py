@@ -1,7 +1,7 @@
 import plotly.express as px
 import streamlit as st
 
-from database import get_measurements, init_db
+from sensor_poc.database import get_measurements, init_db
 
 st.set_page_config(
     page_title="Sensor Dashboard",
@@ -71,6 +71,5 @@ def dashboard():
     )
 
     st.plotly_chart(fig, width='stretch')
-
 
 dashboard()

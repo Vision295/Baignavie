@@ -2,7 +2,7 @@ import time
 
 import numpy as np
 
-from database import delete_db, init_db, save_measurement
+from sensor_poc.database import delete_db, init_db, save_measurement
 
 
 def generate_data(t):
